@@ -17,7 +17,7 @@ export default function Header() {
                     className="contact-btn"
                     onClick={() =>
                         window.open(
-                            "https://www.upwork.com/freelancers/~01cc9384a787cfb4fe?companyReference=1567804226158288897&mp_source=share",
+                            "https://www.linkedin.com/in/khanzada-khan-581713254/",
                             "_blank",
                             "noopener,noreferrer"
                         )

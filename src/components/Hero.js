@@ -138,13 +138,13 @@ export default function Hero() {
                 </div>
                 <div className="profile-card">
                     <img src={profile} alt="Taha Hashmi" />
-                    <h3>Taha Hashmi</h3>
-                    <p>UI/UX Designer · Motion & Graphic Designer</p>
+                    <h3>Khanzada Khan</h3>
+                    <p>Junior Developer</p>
                     <div className="profile-info">
-                        <div><strong>Founder</strong><span>Inventocube</span></div>
-                        <div><strong>UI/UX Designer</strong><span>Figma</span></div>
-                        <div><strong>Graphic Designer</strong><span>Adobe</span></div>
-                        <div><strong>Motion Designer</strong><span>After Effects</span></div>
+                        <div><strong>Frontend</strong><span>React</span></div>
+                        <div><strong>Backend</strong><span>Firebase,Mongodb</span></div>
+                        {/* <div><strong>Designer</strong><span>Adobe</span></div>
+                        <div><strong>Motion Designer</strong><span>After Effects</span></div> */}
                     </div>
                 </div>
             </div>
