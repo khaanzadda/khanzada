@@ -1,0 +1,387 @@
+.hero {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 96px);
+    background: #f4f4f4;
+    overflow: hidden;
+    font-family: Inter, system-ui, sans-serif;
+    margin-top: 70px;
+}
+
+.hero-grid {
+    position: absolute;
+    inset: -48%;
+    background-image:
+        linear-gradient(rgba(212, 212, 212, .85) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(212, 212, 212, .85) 1px, transparent 1px);
+    background-size: 48px 48px;
+    transform: perspective(1200px) rotateX(-75deg);
+    mask-image: linear-gradient(to bottom, black 0%, black 58%, transparent 88%);
+}
+
+.hero-container {
+    position: relative;
+    width: 100%;
+    max-width: 1440px;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.label-top {
+    font-family: "inter", sans-serif;
+    position: absolute;
+    top: 90px;
+    left: 51%;
+    transform: translateX(-50%);
+    font-size: 15px;
+    letter-spacing: 0.16em;
+    color: #9a9a9a;
+    text-align: left;
+}
+
+.hero-left {
+    position: absolute;
+    left: 180px;
+    top: 55%;
+    transform: translateY(-50%);
+}
+
+.label-left {
+    position: absolute;
+    top: 80px;
+    left: -130px;
+    font-size: 15px;
+    letter-spacing: 0.16em;
+    color: #9a9a9a;
+    text-align: right;
+}
+
+.label-left.bottom {
+    top: 390px;
+}
+
+.label-bottom {
+    margin-left: 540px;
+    margin-top: 10px;
+    font-size: 15px;
+    letter-spacing: 0.16em;
+    color: #9a9a9a;
+}
+
+.hero-line {
+    font-family: "Antonio", sans-serif;
+    font-weight: 400;
+    font-size: 170px;
+    line-height: 0.8;
+    letter-spacing: 0.002em;
+    text-transform: uppercase;
+    color: #808080;
+    white-space: nowrap;
+    margin: 0;
+}
+
+.hero-line2 {
+    font-family: "Antonio", sans-serif;
+    font-weight: 400;
+    font-size: 170px;
+    line-height: 0.8;
+    letter-spacing: 0.002em;
+    text-transform: uppercase;
+    color: #808080;
+    white-space: nowrap;
+    margin: 0;
+}
+
+.hero-line3 {
+    font-family: "Antonio", sans-serif;
+    font-weight: 400;
+    font-size: 170px;
+    line-height: 0.8;
+    letter-spacing: 0.002em;
+    text-transform: uppercase;
+    color: #808080;
+    white-space: nowrap;
+    margin: 0;
+}
+
+.hero-text {
+    display: inline-block;
+    transform: scaleX(0.55);
+    transform-origin: left center;
+}
+
+.blue-text {
+    color: #0a66ff;
+    font-weight: 500;
+}
+
+.icon-inline {
+    width: 220px;
+    height: 150px;
+    margin: 0 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-inline img {
+    width: 220px;
+    height: 150px;
+}
+
+.hero-row {
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+    margin-top: 12px;
+    margin-left: -60px;
+}
+
+.hero-cta2 {
+    display: none;
+}
+
+.hero-cta {
+    padding: 14px 48px;
+    border-radius: 999px;
+    background: #000;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    display: inline-flex;
+    gap: 12px;
+    cursor: pointer;
+    margin-left: -475px;
+    transform: translateY(10px);
+    text-decoration: none;
+}
+
+.profile-card {
+    position: absolute;
+    right: 28px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 238px;
+}
+
+.profile-card img {
+    width: 100%;
+    border-radius: 18px;
+}
+
+.profile-card h3 {
+    margin: 12px 0 2px;
+    font-size: 15px;
+}
+
+.profile-card p {
+    font-size: 12px;
+    color: #7a7a7a;
+}
+
+.profile-info {
+    margin-top: 14px;
+    font-size: 12px;
+}
+
+.profile-info div {
+    display: flex;
+    justify-content: space-between;
+    padding: 9px 0;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+@media (max-width: 768px) {
+
+    .hero {
+        height: 1150px;
+        padding: 100px 16px 60px;
+    }
+
+    .hero-grid {
+        inset: -70%;
+        transform: perspective(800px) rotateX(-70deg);
+    }
+
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .label-left {
+        position: absolute;
+        left: 10px;
+        top: 0;
+        transform: none;
+        margin-bottom: 2px;
+        text-align: right;
+        font-size: 12px;
+    }
+
+    .label-left.bottom {
+        position: absolute;
+        left: 5px;
+        top: 230px;
+        transform: none;
+        margin-bottom: 2px;
+        text-align: left;
+        font-size: 12px;
+    }
+
+    .label-bottom {
+        position: absolute;
+        right: -3px;
+        top: 220px;
+        transform: none;
+        margin-bottom: 2px;
+        text-align: left;
+        font-size: 12px;
+    }
+
+    .label-top {
+        position: absolute;
+        right: 8px;
+        top: 2px;
+        transform: none;
+        margin-bottom: 2px;
+        text-align: left;
+        font-size: 12px;
+    }
+
+    .hero-left {
+        position: static;
+        transform: none;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-line {
+        margin-top: 25px;
+        padding-top: 12px;
+        font-size: 47px;
+        line-height: 0.9;
+        white-space: nowrap;
+    }
+
+    .hero-line2 {
+        font-size: 47px;
+        line-height: 0.9;
+        white-space: nowrap;
+    }
+
+    .hero-line3 {
+        font-size: 47px;
+        line-height: 0.9;
+        white-space: nowrap;
+        margin-bottom: 35px;
+    }
+
+    .hero-text {
+        transform: scaleX(0.75);
+        transform-origin: center;
+    }
+
+    .icon-inline {
+        width: 48px;
+        height: 48px;
+        margin: 0 6px;
+    }
+
+    .icon-inline img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .hero-row {
+        flex-direction: column;
+        margin: 12px 0 24px;
+        gap: 18px;
+    }
+
+    .hero-cta {
+        margin: 0;
+        padding: 12px 36px;
+        font-size: 16px;
+        transform: none;
+        display: none;
+        text-decoration: none;
+    }
+
+    .hero-cta2 {
+        padding: 14px 48px;
+        border-radius: 999px;
+        background: #000;
+        color: #fff;
+        font-size: 20px;
+        border: none;
+        display: inline-flex;
+        gap: 12px;
+        cursor: pointer;
+        margin-left: -475px;
+        transform: translateY(10px);
+        margin: 0;
+        padding: 12px 36px;
+        font-size: 16px;
+        transform: none;
+        text-decoration: none;
+    }
+
+    .profile-card {
+        position: static;
+        transform: none;
+        margin-top: 40px;
+        width: 90%;
+        max-width: 320px;
+        text-align: center;
+    }
+
+    .profile-card img {
+        border-radius: 22px;
+    }
+
+    .profile-info div {
+        font-size: 12px;
+    }
+
+    /* .profile-card {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        width: 100%;
+        max-width: 360px;
+        margin-top: 40px;
+        text-align: left;
+    }
+
+    .profile-card img {
+        width: 96px;
+        height: auto;
+        border-radius: 16px;
+        flex-shrink: 0;
+    }
+
+    .profile-card h3 {
+        margin: 0;
+        font-size: 14px;
+        display: none;
+    }
+
+    .profile-card p {
+        margin: 2px 0 8px;
+        font-size: 12px;
+        display: none;
+    }
+
+    .profile-info {
+        margin-top: 6px;
+    }
+
+    .profile-info div {
+        padding: 6px 0;
+        font-size: 11px;
+    } */
+}
